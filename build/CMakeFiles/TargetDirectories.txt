@@ -1,0 +1,4 @@
+C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/CMakeFiles/MarioSDL.dir
+C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/CMakeFiles/copy_assets.dir
+C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/CMakeFiles/ZERO_CHECK.dir

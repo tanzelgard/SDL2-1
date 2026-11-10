@@ -1,0 +1,10 @@
+^C:\USERS\KOLDU\ONEDRIVE\ДОКУМЕНТЫ\SDL2GAME\BUILD\CMAKEFILES\E7F4940415EBC4707FB54F869AF344B4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/koldu/OneDrive/Документы/SDL2GAME -BC:/Users/koldu/OneDrive/Документы/SDL2GAME/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/MarioSDL.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

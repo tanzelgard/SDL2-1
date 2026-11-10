@@ -1,0 +1,20 @@
+^C:\USERS\KOLDU\ONEDRIVE\ДОКУМЕНТЫ\SDL2GAME\BUILD\CMAKEFILES\E7F4940415EBC4707FB54F869AF344B4\COPY_ASSETS.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/koldu/OneDrive/Документы/SDL2GAME/assets C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/Release/assets
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\KOLDU\ONEDRIVE\ДОКУМЕНТЫ\SDL2GAME\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/koldu/OneDrive/Документы/SDL2GAME -BC:/Users/koldu/OneDrive/Документы/SDL2GAME/build --check-stamp-file C:/Users/koldu/OneDrive/Документы/SDL2GAME/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
